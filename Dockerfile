@@ -1,4 +1,4 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi
+FROM demisto/fastapi:0.111.0.94008
 WORKDIR /app
 COPY . /app
 RUN pip install --no-cache-dir firebase-admin pydantic
